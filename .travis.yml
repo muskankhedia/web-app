@@ -11,7 +11,7 @@ before_script:
 
 script:
   - ng lint
-  - node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng build --prod --output-hashing=none --base-href=\"/web-app/\" --watch=false
+  - node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng build --prod --output-hashing=none --base-href=\"/web-app/\" --watch=false --aot=false
 
 deploy:
   provider: pages
