@@ -10,7 +10,7 @@ before_script:
   - npm install -g --silent @angular/cli@7.3.9
 
 script:
-  - node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer=false --aot=false --watch=false
+  - node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer --watch=false
 
 deploy:
   provider: pages
