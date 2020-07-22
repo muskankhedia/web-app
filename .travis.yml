@@ -11,7 +11,7 @@ before_script:
 
 script:
   - ng lint
-  - npm run build:prod
+  - node --max_old_space_size=16384 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer
 
 deploy:
   provider: pages
